@@ -17,13 +17,12 @@ namespace PlayerEngine
             {
                 var but = (Button)coreNode.GetChild(i);
                 decimal columndec = i / columnCount;
-                int Column = (int)Math.Floor(columndec);
-                int Row;
-                if (Column == 0)
-                    Row = i;
+                int Row = (int)Math.Floor(columndec);
+                int Column;
+                if (Row == 0)
+                    Column = i;
                 else
-                    Row = (int)i % columnCount;
-                GD.Print(Column + " " + Row);
+                    Column = (int)i % columnCount;
                 field.Add(new Cell(but,Column,Row));
             }
         }
