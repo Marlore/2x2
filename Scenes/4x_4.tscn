@@ -1,9 +1,21 @@
-[gd_scene load_steps=3 format=3 uid="uid://b72qwqfnpm7tn"]
+[gd_scene load_steps=4 format=3 uid="uid://b72qwqfnpm7tn"]
 
 [ext_resource type="Script" path="res://Engine/FieldInit.cs" id="1_oroge"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5ku42"]
-bg_color = Color(0.788578, 0.775642, 0.770081, 1)
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6ovr5"]
+bg_color = Color(1, 1, 1, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.2, 0.0941176, 0.0980392, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 5
+
+[sub_resource type="Theme" id="Theme_1el2h"]
+Button/styles/disabled = SubResource("StyleBoxFlat_6ovr5")
 
 [node name="4x4" type="Node2D"]
 script = ExtResource("1_oroge")
@@ -37,9 +49,10 @@ columns = 4
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme = SubResource("Theme_1el2h")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 50
-theme_override_styles/normal = SubResource("StyleBoxFlat_5ku42")
+disabled = true
 text = "2
 "
 
@@ -47,9 +60,10 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme = SubResource("Theme_1el2h")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 50
-theme_override_styles/normal = SubResource("StyleBoxFlat_5ku42")
+disabled = true
 text = "2
 "
 
@@ -57,9 +71,10 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme = SubResource("Theme_1el2h")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 50
-theme_override_styles/normal = SubResource("StyleBoxFlat_5ku42")
+disabled = true
 text = "2
 "
 
@@ -67,9 +82,10 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme = SubResource("Theme_1el2h")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 50
-theme_override_styles/normal = SubResource("StyleBoxFlat_5ku42")
+disabled = true
 text = "2
 "
 
@@ -77,9 +93,10 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme = SubResource("Theme_1el2h")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 50
-theme_override_styles/normal = SubResource("StyleBoxFlat_5ku42")
+disabled = true
 text = "2
 "
 
@@ -87,9 +104,10 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme = SubResource("Theme_1el2h")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 50
-theme_override_styles/normal = SubResource("StyleBoxFlat_5ku42")
+disabled = true
 text = "2
 "
 
@@ -97,9 +115,10 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme = SubResource("Theme_1el2h")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 50
-theme_override_styles/normal = SubResource("StyleBoxFlat_5ku42")
+disabled = true
 text = "2
 "
 
@@ -107,9 +126,10 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme = SubResource("Theme_1el2h")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 50
-theme_override_styles/normal = SubResource("StyleBoxFlat_5ku42")
+disabled = true
 text = "2
 "
 
@@ -117,9 +137,10 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme = SubResource("Theme_1el2h")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 50
-theme_override_styles/normal = SubResource("StyleBoxFlat_5ku42")
+disabled = true
 text = "2
 "
 
@@ -127,9 +148,10 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme = SubResource("Theme_1el2h")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 50
-theme_override_styles/normal = SubResource("StyleBoxFlat_5ku42")
+disabled = true
 text = "2
 "
 
@@ -137,9 +159,10 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme = SubResource("Theme_1el2h")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 50
-theme_override_styles/normal = SubResource("StyleBoxFlat_5ku42")
+disabled = true
 text = "2
 "
 
@@ -147,9 +170,10 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme = SubResource("Theme_1el2h")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 50
-theme_override_styles/normal = SubResource("StyleBoxFlat_5ku42")
+disabled = true
 text = "2
 "
 
@@ -157,9 +181,10 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme = SubResource("Theme_1el2h")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 50
-theme_override_styles/normal = SubResource("StyleBoxFlat_5ku42")
+disabled = true
 text = "2
 "
 
@@ -167,9 +192,10 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme = SubResource("Theme_1el2h")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 50
-theme_override_styles/normal = SubResource("StyleBoxFlat_5ku42")
+disabled = true
 text = "2
 "
 
@@ -177,9 +203,10 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme = SubResource("Theme_1el2h")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 50
-theme_override_styles/normal = SubResource("StyleBoxFlat_5ku42")
+disabled = true
 text = "2
 "
 
@@ -187,8 +214,9 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme = SubResource("Theme_1el2h")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 50
-theme_override_styles/normal = SubResource("StyleBoxFlat_5ku42")
+disabled = true
 text = "2
 "

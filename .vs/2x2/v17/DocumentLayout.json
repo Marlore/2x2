@@ -3,19 +3,19 @@
   "WorkspaceRootPath": "D:\\GitHub\\2x2\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{5A1F34BC-F97F-479D-9544-C73D2EDD58E1}|2x2.csproj|d:\\github\\2x2\\data\\cellentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A1F34BC-F97F-479D-9544-C73D2EDD58E1}|2x2.csproj|solutionrelative:data\\cellentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5A1F34BC-F97F-479D-9544-C73D2EDD58E1}|2x2.csproj|d:\\github\\2x2\\data\\field.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5A1F34BC-F97F-479D-9544-C73D2EDD58E1}|2x2.csproj|solutionrelative:data\\field.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5A1F34BC-F97F-479D-9544-C73D2EDD58E1}|2x2.csproj|D:\\GitHub\\2x2\\engine\\fieldinit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5A1F34BC-F97F-479D-9544-C73D2EDD58E1}|2x2.csproj|d:\\github\\2x2\\engine\\fieldinit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5A1F34BC-F97F-479D-9544-C73D2EDD58E1}|2x2.csproj|solutionrelative:engine\\fieldinit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5A1F34BC-F97F-479D-9544-C73D2EDD58E1}|2x2.csproj|D:\\GitHub\\2x2\\data\\cellentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5A1F34BC-F97F-479D-9544-C73D2EDD58E1}|2x2.csproj|solutionrelative:data\\cellentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5A1F34BC-F97F-479D-9544-C73D2EDD58E1}|2x2.csproj|D:\\GitHub\\2x2\\engine\\playerengine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5A1F34BC-F97F-479D-9544-C73D2EDD58E1}|2x2.csproj|d:\\github\\2x2\\engine\\playerengine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5A1F34BC-F97F-479D-9544-C73D2EDD58E1}|2x2.csproj|solutionrelative:engine\\playerengine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -26,34 +26,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FieldInit.cs",
-              "DocumentMoniker": "D:\\GitHub\\2x2\\Engine\\FieldInit.cs",
-              "RelativeDocumentMoniker": "Engine\\FieldInit.cs",
-              "ToolTip": "D:\\GitHub\\2x2\\Engine\\FieldInit.cs",
-              "RelativeToolTip": "Engine\\FieldInit.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-16T23:48:33.713Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Field.cs",
-              "DocumentMoniker": "D:\\GitHub\\2x2\\Data\\Field.cs",
-              "RelativeDocumentMoniker": "Data\\Field.cs",
-              "ToolTip": "D:\\GitHub\\2x2\\Data\\Field.cs",
-              "RelativeToolTip": "Data\\Field.cs",
-              "ViewState": "AQIAAB8AAAAAAAAAAAAUwDwAAAA4AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-16T23:35:52.33Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 3,
@@ -62,22 +36,48 @@
               "RelativeDocumentMoniker": "Engine\\PlayerEngine.cs",
               "ToolTip": "D:\\GitHub\\2x2\\Engine\\PlayerEngine.cs",
               "RelativeToolTip": "Engine\\PlayerEngine.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAANAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-16T23:12:10.344Z",
+              "WhenOpened": "2024-04-18T01:54:37.915Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
+              "Title": "Field.cs",
+              "DocumentMoniker": "D:\\GitHub\\2x2\\Data\\Field.cs",
+              "RelativeDocumentMoniker": "Data\\Field.cs",
+              "ToolTip": "D:\\GitHub\\2x2\\Data\\Field.cs",
+              "RelativeToolTip": "Data\\Field.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T01:41:27.564Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "CellEntity.cs",
               "DocumentMoniker": "D:\\GitHub\\2x2\\Data\\CellEntity.cs",
               "RelativeDocumentMoniker": "Data\\CellEntity.cs",
               "ToolTip": "D:\\GitHub\\2x2\\Data\\CellEntity.cs",
               "RelativeToolTip": "Data\\CellEntity.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAWAAAA",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAQwBYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-16T23:04:32.052Z",
+              "WhenOpened": "2024-04-18T01:14:44.435Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FieldInit.cs",
+              "DocumentMoniker": "D:\\GitHub\\2x2\\Engine\\FieldInit.cs",
+              "RelativeDocumentMoniker": "Engine\\FieldInit.cs",
+              "ToolTip": "D:\\GitHub\\2x2\\Engine\\FieldInit.cs",
+              "RelativeToolTip": "Engine\\FieldInit.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T01:14:34.886Z",
               "EditorCaption": ""
             }
           ]

@@ -1,0 +1,671 @@
+[gd_scene load_steps=3 format=3 uid="uid://b5lg6ooq4xkvo"]
+
+[ext_resource type="Script" path="res://Engine/FieldInit.cs" id="1_15qgs"]
+[ext_resource type="Theme" uid="uid://cerdid4m11p7o" path="res://Styles/MainPallet.tres" id="2_u8618"]
+
+[node name="8x8" type="Node2D"]
+script = ExtResource("1_15qgs")
+metadata/lenght = 64
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="GridContainer" type="GridContainer" parent="CanvasLayer/ColorRect"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -400.0
+offset_top = -400.0
+offset_right = 400.0
+offset_bottom = 400.0
+grow_horizontal = 2
+grow_vertical = 2
+columns = 8
+
+[node name="Cell" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_u8618")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2"
+
+[node name="Cell2" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_u8618")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell3" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_u8618")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell4" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_u8618")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell5" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_u8618")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell6" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_u8618")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell7" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_u8618")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell8" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_u8618")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell9" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_u8618")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell10" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_u8618")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell11" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_u8618")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell12" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_u8618")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell13" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_u8618")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell14" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_u8618")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell15" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_u8618")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell16" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_u8618")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell17" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_u8618")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell18" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_u8618")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell19" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_u8618")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell20" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_u8618")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell21" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_u8618")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell22" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_u8618")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell23" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_u8618")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell24" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_u8618")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell25" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_u8618")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell26" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_u8618")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell27" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_u8618")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell28" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_u8618")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell29" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_u8618")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell30" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_u8618")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell31" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_u8618")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell32" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_u8618")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell33" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_u8618")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell34" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_u8618")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell35" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_u8618")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell36" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_u8618")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell37" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_u8618")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell38" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_u8618")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell39" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_u8618")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell40" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_u8618")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell41" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_u8618")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell42" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_u8618")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell43" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_u8618")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell44" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_u8618")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell45" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_u8618")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell46" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_u8618")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell47" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_u8618")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell48" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_u8618")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell49" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_u8618")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell50" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_u8618")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell51" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_u8618")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell52" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_u8618")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell53" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_u8618")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell54" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_u8618")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell55" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_u8618")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell56" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_u8618")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell57" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_u8618")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell58" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_u8618")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell59" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_u8618")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell60" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_u8618")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell61" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_u8618")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell62" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_u8618")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell63" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_u8618")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell64" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_u8618")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
