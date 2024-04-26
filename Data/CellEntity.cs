@@ -18,7 +18,7 @@ namespace Cells
             Column = column;
             Row = row;
             theme = Gameobject.Theme;
-            Value = 100000;
+            Value = 0;
         }
 
         void UpdateUI()
@@ -29,8 +29,8 @@ namespace Cells
                 Gameobject.Text = "";
             var color = MapIntToColor(Value*50);
             Gameobject.Modulate = color.Inverted();
-            if (Value.ToString().Length > 2)
-                Gameobject.AddThemeFontSizeOverride("font_size", 50 - ((Value.ToString().Length - 2) * 8));
+            if (Value.ToString().Length >= 2)
+                Gameobject.AddThemeFontSizeOverride("font_size", 50 - ((Value.ToString().Length - 2) * 12));
             else
                 Gameobject.RemoveThemeFontSizeOverride("font_size");
         }

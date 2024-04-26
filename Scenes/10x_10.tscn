@@ -1,32 +1,32 @@
-[gd_scene load_steps=11 format=3 uid="uid://b5lg6ooq4xkvo"]
+[gd_scene load_steps=11 format=3 uid="uid://dec8sboviu3r8"]
 
-[ext_resource type="Script" path="res://Engine/FieldInit.cs" id="1_15qgs"]
-[ext_resource type="Script" path="res://UI/Score.cs" id="2_2k6l0"]
-[ext_resource type="PackedScene" uid="uid://0c6rex28e7s4" path="res://Particals/cpu_particles_2d.tscn" id="2_crej6"]
-[ext_resource type="Theme" uid="uid://cerdid4m11p7o" path="res://Styles/MainPallet.tres" id="2_u8618"]
-[ext_resource type="Texture2D" uid="uid://bpxguebc61jwn" path="res://UI/Images/back-button.png" id="2_wv83g"]
+[ext_resource type="Script" path="res://Engine/FieldInit.cs" id="1_tsdo6"]
+[ext_resource type="PackedScene" uid="uid://0c6rex28e7s4" path="res://Particals/cpu_particles_2d.tscn" id="1_vbtir"]
+[ext_resource type="Texture2D" uid="uid://bpxguebc61jwn" path="res://UI/Images/back-button.png" id="2_ctumt"]
+[ext_resource type="Script" path="res://UI/Score.cs" id="2_tfc2c"]
+[ext_resource type="Theme" uid="uid://cerdid4m11p7o" path="res://Styles/MainPallet.tres" id="2_wjmxa"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8xawh"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0kk1w"]
 bg_color = Color(0.6, 0.6, 0.6, 0)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_164qr"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yjviq"]
 bg_color = Color(0.6, 0.6, 0.6, 0)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rr366"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uqfma"]
 bg_color = Color(0.6, 0.6, 0.6, 0)
 
-[sub_resource type="Theme" id="Theme_v4xlg"]
-Button/styles/hover = SubResource("StyleBoxFlat_8xawh")
-Button/styles/normal = SubResource("StyleBoxFlat_164qr")
-Button/styles/pressed = SubResource("StyleBoxFlat_rr366")
+[sub_resource type="Theme" id="Theme_qb4th"]
+Button/styles/hover = SubResource("StyleBoxFlat_0kk1w")
+Button/styles/normal = SubResource("StyleBoxFlat_yjviq")
+Button/styles/pressed = SubResource("StyleBoxFlat_uqfma")
 
-[sub_resource type="Theme" id="Theme_ogdsy"]
+[sub_resource type="Theme" id="Theme_5papy"]
 Label/colors/font_color = Color(0.152941, 0.152941, 0.152941, 1)
 Label/font_sizes/font_size = 50
 
-[node name="8x8" type="Node2D"]
-script = ExtResource("1_15qgs")
-metadata/lenght = 64
+[node name="10x10" type="Node2D"]
+script = ExtResource("1_tsdo6")
+metadata/lenght = 100
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -40,10 +40,10 @@ grow_vertical = 2
 [node name="Back-to-menu" type="Button" parent="CanvasLayer/ColorRect"]
 offset_right = 100.0
 offset_bottom = 100.0
-theme = SubResource("Theme_v4xlg")
+theme = SubResource("Theme_qb4th")
 shortcut_feedback = false
 shortcut_in_tooltip = false
-icon = ExtResource("2_wv83g")
+icon = ExtResource("2_ctumt")
 icon_alignment = 1
 expand_icon = true
 
@@ -56,14 +56,14 @@ offset_left = -155.0
 offset_right = 155.0
 offset_bottom = 182.0
 grow_horizontal = 2
-theme = SubResource("Theme_ogdsy")
+theme = SubResource("Theme_5papy")
 text = "
 "
 horizontal_alignment = 1
 vertical_alignment = 1
-script = ExtResource("2_2k6l0")
+script = ExtResource("2_tfc2c")
 
-[node name="CPUParticles2D" parent="CanvasLayer/ColorRect" instance=ExtResource("2_crej6")]
+[node name="CPUParticles2D" parent="CanvasLayer/ColorRect" instance=ExtResource("1_vbtir")]
 
 [node name="GridContainer" type="GridContainer" parent="CanvasLayer/ColorRect"]
 layout_mode = 1
@@ -78,13 +78,13 @@ offset_right = 400.0
 offset_bottom = 400.0
 grow_horizontal = 2
 grow_vertical = 2
-columns = 8
+columns = 10
 
 [node name="Cell" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = ExtResource("2_u8618")
+theme = ExtResource("2_wjmxa")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 disabled = true
 text = "2"
@@ -93,7 +93,7 @@ text = "2"
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = ExtResource("2_u8618")
+theme = ExtResource("2_wjmxa")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 disabled = true
 text = "2
@@ -103,7 +103,7 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = ExtResource("2_u8618")
+theme = ExtResource("2_wjmxa")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 disabled = true
 text = "2
@@ -113,7 +113,7 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = ExtResource("2_u8618")
+theme = ExtResource("2_wjmxa")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 disabled = true
 text = "2
@@ -123,7 +123,7 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = ExtResource("2_u8618")
+theme = ExtResource("2_wjmxa")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 disabled = true
 text = "2
@@ -133,7 +133,7 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = ExtResource("2_u8618")
+theme = ExtResource("2_wjmxa")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 disabled = true
 text = "2
@@ -143,7 +143,7 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = ExtResource("2_u8618")
+theme = ExtResource("2_wjmxa")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 disabled = true
 text = "2
@@ -153,7 +153,7 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = ExtResource("2_u8618")
+theme = ExtResource("2_wjmxa")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 disabled = true
 text = "2
@@ -163,7 +163,7 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = ExtResource("2_u8618")
+theme = ExtResource("2_wjmxa")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 disabled = true
 text = "2
@@ -173,7 +173,7 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = ExtResource("2_u8618")
+theme = ExtResource("2_wjmxa")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 disabled = true
 text = "2
@@ -183,7 +183,7 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = ExtResource("2_u8618")
+theme = ExtResource("2_wjmxa")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 disabled = true
 text = "2
@@ -193,7 +193,7 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = ExtResource("2_u8618")
+theme = ExtResource("2_wjmxa")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 disabled = true
 text = "2
@@ -203,7 +203,7 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = ExtResource("2_u8618")
+theme = ExtResource("2_wjmxa")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 disabled = true
 text = "2
@@ -213,7 +213,7 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = ExtResource("2_u8618")
+theme = ExtResource("2_wjmxa")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 disabled = true
 text = "2
@@ -223,7 +223,7 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = ExtResource("2_u8618")
+theme = ExtResource("2_wjmxa")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 disabled = true
 text = "2
@@ -233,7 +233,7 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = ExtResource("2_u8618")
+theme = ExtResource("2_wjmxa")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 disabled = true
 text = "2
@@ -243,7 +243,7 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = ExtResource("2_u8618")
+theme = ExtResource("2_wjmxa")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 disabled = true
 text = "2
@@ -253,7 +253,7 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = ExtResource("2_u8618")
+theme = ExtResource("2_wjmxa")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 disabled = true
 text = "2
@@ -263,7 +263,7 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = ExtResource("2_u8618")
+theme = ExtResource("2_wjmxa")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 disabled = true
 text = "2
@@ -273,7 +273,7 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = ExtResource("2_u8618")
+theme = ExtResource("2_wjmxa")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 disabled = true
 text = "2
@@ -283,7 +283,7 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = ExtResource("2_u8618")
+theme = ExtResource("2_wjmxa")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 disabled = true
 text = "2
@@ -293,7 +293,7 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = ExtResource("2_u8618")
+theme = ExtResource("2_wjmxa")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 disabled = true
 text = "2
@@ -303,7 +303,7 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = ExtResource("2_u8618")
+theme = ExtResource("2_wjmxa")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 disabled = true
 text = "2
@@ -313,7 +313,7 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = ExtResource("2_u8618")
+theme = ExtResource("2_wjmxa")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 disabled = true
 text = "2
@@ -323,7 +323,7 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = ExtResource("2_u8618")
+theme = ExtResource("2_wjmxa")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 disabled = true
 text = "2
@@ -333,7 +333,7 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = ExtResource("2_u8618")
+theme = ExtResource("2_wjmxa")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 disabled = true
 text = "2
@@ -343,7 +343,7 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = ExtResource("2_u8618")
+theme = ExtResource("2_wjmxa")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 disabled = true
 text = "2
@@ -353,7 +353,7 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = ExtResource("2_u8618")
+theme = ExtResource("2_wjmxa")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 disabled = true
 text = "2
@@ -363,7 +363,7 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = ExtResource("2_u8618")
+theme = ExtResource("2_wjmxa")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 disabled = true
 text = "2
@@ -373,7 +373,7 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = ExtResource("2_u8618")
+theme = ExtResource("2_wjmxa")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 disabled = true
 text = "2
@@ -383,7 +383,7 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = ExtResource("2_u8618")
+theme = ExtResource("2_wjmxa")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 disabled = true
 text = "2
@@ -393,7 +393,7 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = ExtResource("2_u8618")
+theme = ExtResource("2_wjmxa")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 disabled = true
 text = "2
@@ -403,7 +403,7 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = ExtResource("2_u8618")
+theme = ExtResource("2_wjmxa")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 disabled = true
 text = "2
@@ -413,7 +413,7 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = ExtResource("2_u8618")
+theme = ExtResource("2_wjmxa")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 disabled = true
 text = "2
@@ -423,7 +423,7 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = ExtResource("2_u8618")
+theme = ExtResource("2_wjmxa")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 disabled = true
 text = "2
@@ -433,7 +433,7 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = ExtResource("2_u8618")
+theme = ExtResource("2_wjmxa")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 disabled = true
 text = "2
@@ -443,7 +443,7 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = ExtResource("2_u8618")
+theme = ExtResource("2_wjmxa")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 disabled = true
 text = "2
@@ -453,7 +453,7 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = ExtResource("2_u8618")
+theme = ExtResource("2_wjmxa")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 disabled = true
 text = "2
@@ -463,7 +463,7 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = ExtResource("2_u8618")
+theme = ExtResource("2_wjmxa")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 disabled = true
 text = "2
@@ -473,7 +473,7 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = ExtResource("2_u8618")
+theme = ExtResource("2_wjmxa")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 disabled = true
 text = "2
@@ -483,7 +483,7 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = ExtResource("2_u8618")
+theme = ExtResource("2_wjmxa")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 disabled = true
 text = "2
@@ -493,7 +493,7 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = ExtResource("2_u8618")
+theme = ExtResource("2_wjmxa")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 disabled = true
 text = "2
@@ -503,7 +503,7 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = ExtResource("2_u8618")
+theme = ExtResource("2_wjmxa")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 disabled = true
 text = "2
@@ -513,7 +513,7 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = ExtResource("2_u8618")
+theme = ExtResource("2_wjmxa")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 disabled = true
 text = "2
@@ -523,7 +523,7 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = ExtResource("2_u8618")
+theme = ExtResource("2_wjmxa")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 disabled = true
 text = "2
@@ -533,7 +533,7 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = ExtResource("2_u8618")
+theme = ExtResource("2_wjmxa")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 disabled = true
 text = "2
@@ -543,7 +543,7 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = ExtResource("2_u8618")
+theme = ExtResource("2_wjmxa")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 disabled = true
 text = "2
@@ -553,7 +553,7 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = ExtResource("2_u8618")
+theme = ExtResource("2_wjmxa")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 disabled = true
 text = "2
@@ -563,7 +563,7 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = ExtResource("2_u8618")
+theme = ExtResource("2_wjmxa")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 disabled = true
 text = "2
@@ -573,7 +573,7 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = ExtResource("2_u8618")
+theme = ExtResource("2_wjmxa")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 disabled = true
 text = "2
@@ -583,7 +583,7 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = ExtResource("2_u8618")
+theme = ExtResource("2_wjmxa")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 disabled = true
 text = "2
@@ -593,7 +593,7 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = ExtResource("2_u8618")
+theme = ExtResource("2_wjmxa")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 disabled = true
 text = "2
@@ -603,7 +603,7 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = ExtResource("2_u8618")
+theme = ExtResource("2_wjmxa")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 disabled = true
 text = "2
@@ -613,7 +613,7 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = ExtResource("2_u8618")
+theme = ExtResource("2_wjmxa")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 disabled = true
 text = "2
@@ -623,7 +623,7 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = ExtResource("2_u8618")
+theme = ExtResource("2_wjmxa")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 disabled = true
 text = "2
@@ -633,7 +633,7 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = ExtResource("2_u8618")
+theme = ExtResource("2_wjmxa")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 disabled = true
 text = "2
@@ -643,7 +643,7 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = ExtResource("2_u8618")
+theme = ExtResource("2_wjmxa")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 disabled = true
 text = "2
@@ -653,7 +653,7 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = ExtResource("2_u8618")
+theme = ExtResource("2_wjmxa")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 disabled = true
 text = "2
@@ -663,7 +663,7 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = ExtResource("2_u8618")
+theme = ExtResource("2_wjmxa")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 disabled = true
 text = "2
@@ -673,7 +673,7 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = ExtResource("2_u8618")
+theme = ExtResource("2_wjmxa")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 disabled = true
 text = "2
@@ -683,7 +683,7 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = ExtResource("2_u8618")
+theme = ExtResource("2_wjmxa")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 disabled = true
 text = "2
@@ -693,7 +693,7 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = ExtResource("2_u8618")
+theme = ExtResource("2_wjmxa")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 disabled = true
 text = "2
@@ -703,7 +703,7 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = ExtResource("2_u8618")
+theme = ExtResource("2_wjmxa")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 disabled = true
 text = "2
@@ -713,7 +713,366 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = ExtResource("2_u8618")
+theme = ExtResource("2_wjmxa")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell65" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_wjmxa")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2"
+
+[node name="Cell66" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_wjmxa")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell67" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_wjmxa")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell68" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_wjmxa")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell69" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_wjmxa")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell70" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_wjmxa")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell71" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_wjmxa")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell72" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_wjmxa")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell73" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_wjmxa")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell74" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_wjmxa")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell75" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_wjmxa")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell76" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_wjmxa")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell77" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_wjmxa")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell78" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_wjmxa")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell79" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_wjmxa")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell80" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_wjmxa")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell81" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_wjmxa")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell82" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_wjmxa")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell83" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_wjmxa")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell84" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_wjmxa")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell85" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_wjmxa")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell86" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_wjmxa")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell87" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_wjmxa")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell88" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_wjmxa")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell89" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_wjmxa")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell90" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_wjmxa")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell91" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_wjmxa")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell92" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_wjmxa")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell93" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_wjmxa")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell94" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_wjmxa")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell95" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_wjmxa")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell96" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_wjmxa")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell97" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_wjmxa")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell98" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_wjmxa")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell99" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_wjmxa")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+disabled = true
+text = "2
+"
+
+[node name="Cell100" type="Button" parent="CanvasLayer/ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_wjmxa")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 disabled = true
 text = "2

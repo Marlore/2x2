@@ -1,5 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://br1y84nrob703"]
+[gd_scene load_steps=3 format=3 uid="uid://br1y84nrob703"]
 
+[ext_resource type="Script" path="res://UI/SceneManagerButton.cs" id="1_gidbd"]
 [ext_resource type="Theme" uid="uid://cff4a5fyln1y4" path="res://Styles/MenuButtons.tres" id="1_o4qid"]
 
 [node name="Menu" type="Node2D"]
@@ -26,6 +27,7 @@ offset_bottom = 158.5
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
+script = ExtResource("1_gidbd")
 
 [node name="4x4" type="Button" parent="CanvasLayer/VBoxContainer"]
 layout_mode = 2
@@ -37,7 +39,11 @@ layout_mode = 2
 theme = ExtResource("1_o4qid")
 text = "8x8"
 
-[node name="16x16" type="Button" parent="CanvasLayer/VBoxContainer"]
+[node name="10x10" type="Button" parent="CanvasLayer/VBoxContainer"]
 layout_mode = 2
 theme = ExtResource("1_o4qid")
-text = "12x12"
+text = "10x10"
+
+[connection signal="pressed" from="CanvasLayer/VBoxContainer/4x4" to="CanvasLayer/VBoxContainer" method="_on_x_4_pressed"]
+[connection signal="pressed" from="CanvasLayer/VBoxContainer/8x8" to="CanvasLayer/VBoxContainer" method="_on_x_8_pressed"]
+[connection signal="pressed" from="CanvasLayer/VBoxContainer/10x10" to="CanvasLayer/VBoxContainer" method="_on_x_10_pressed"]

@@ -1,21 +1,28 @@
-[gd_scene load_steps=4 format=3 uid="uid://b72qwqfnpm7tn"]
+[gd_scene load_steps=11 format=3 uid="uid://b72qwqfnpm7tn"]
 
 [ext_resource type="Script" path="res://Engine/FieldInit.cs" id="1_oroge"]
+[ext_resource type="Texture2D" uid="uid://bpxguebc61jwn" path="res://UI/Images/back-button.png" id="2_13odk"]
+[ext_resource type="PackedScene" uid="uid://0c6rex28e7s4" path="res://Particals/cpu_particles_2d.tscn" id="2_80jho"]
+[ext_resource type="Script" path="res://UI/Score.cs" id="2_p7s7y"]
+[ext_resource type="Theme" uid="uid://cerdid4m11p7o" path="res://Styles/MainPallet.tres" id="3_jsrua"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6ovr5"]
-bg_color = Color(1, 1, 1, 1)
-border_width_left = 2
-border_width_top = 2
-border_width_right = 2
-border_width_bottom = 2
-border_color = Color(0.2, 0.0941176, 0.0980392, 1)
-corner_radius_top_left = 10
-corner_radius_top_right = 10
-corner_radius_bottom_right = 10
-corner_radius_bottom_left = 5
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uicik"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
 
-[sub_resource type="Theme" id="Theme_1el2h"]
-Button/styles/disabled = SubResource("StyleBoxFlat_6ovr5")
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tc2u3"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pke26"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="Theme" id="Theme_sgrum"]
+Button/styles/hover = SubResource("StyleBoxFlat_uicik")
+Button/styles/normal = SubResource("StyleBoxFlat_tc2u3")
+Button/styles/pressed = SubResource("StyleBoxFlat_pke26")
+
+[sub_resource type="Theme" id="Theme_sc8rk"]
+Label/colors/font_color = Color(0.152941, 0.152941, 0.152941, 1)
+Label/font_sizes/font_size = 50
 
 [node name="4x4" type="Node2D"]
 script = ExtResource("1_oroge")
@@ -29,6 +36,37 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Back-to-menu" type="Button" parent="CanvasLayer/ColorRect"]
+layout_mode = 1
+offset_right = 100.0
+offset_bottom = 100.0
+theme = SubResource("Theme_sgrum")
+shortcut_feedback = false
+shortcut_in_tooltip = false
+icon = ExtResource("2_13odk")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Score" type="Label" parent="CanvasLayer/ColorRect"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -155.0
+offset_right = 155.0
+offset_bottom = 182.0
+grow_horizontal = 2
+theme = SubResource("Theme_sc8rk")
+text = "
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("2_p7s7y")
+
+[node name="CPUParticles2D" parent="CanvasLayer/ColorRect" instance=ExtResource("2_80jho")]
 
 [node name="GridContainer" type="GridContainer" parent="CanvasLayer/ColorRect"]
 layout_mode = 1
@@ -49,9 +87,8 @@ columns = 4
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = SubResource("Theme_1el2h")
+theme = ExtResource("3_jsrua")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 50
 disabled = true
 text = "2
 "
@@ -60,9 +97,8 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = SubResource("Theme_1el2h")
+theme = ExtResource("3_jsrua")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 50
 disabled = true
 text = "2
 "
@@ -71,9 +107,8 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = SubResource("Theme_1el2h")
+theme = ExtResource("3_jsrua")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 50
 disabled = true
 text = "2
 "
@@ -82,9 +117,8 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = SubResource("Theme_1el2h")
+theme = ExtResource("3_jsrua")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 50
 disabled = true
 text = "2
 "
@@ -93,9 +127,8 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = SubResource("Theme_1el2h")
+theme = ExtResource("3_jsrua")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 50
 disabled = true
 text = "2
 "
@@ -104,9 +137,8 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = SubResource("Theme_1el2h")
+theme = ExtResource("3_jsrua")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 50
 disabled = true
 text = "2
 "
@@ -115,9 +147,8 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = SubResource("Theme_1el2h")
+theme = ExtResource("3_jsrua")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 50
 disabled = true
 text = "2
 "
@@ -126,9 +157,8 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = SubResource("Theme_1el2h")
+theme = ExtResource("3_jsrua")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 50
 disabled = true
 text = "2
 "
@@ -137,9 +167,8 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = SubResource("Theme_1el2h")
+theme = ExtResource("3_jsrua")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 50
 disabled = true
 text = "2
 "
@@ -148,9 +177,8 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = SubResource("Theme_1el2h")
+theme = ExtResource("3_jsrua")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 50
 disabled = true
 text = "2
 "
@@ -159,9 +187,8 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = SubResource("Theme_1el2h")
+theme = ExtResource("3_jsrua")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 50
 disabled = true
 text = "2
 "
@@ -170,9 +197,8 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = SubResource("Theme_1el2h")
+theme = ExtResource("3_jsrua")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 50
 disabled = true
 text = "2
 "
@@ -181,9 +207,8 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = SubResource("Theme_1el2h")
+theme = ExtResource("3_jsrua")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 50
 disabled = true
 text = "2
 "
@@ -192,9 +217,8 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = SubResource("Theme_1el2h")
+theme = ExtResource("3_jsrua")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 50
 disabled = true
 text = "2
 "
@@ -203,9 +227,8 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = SubResource("Theme_1el2h")
+theme = ExtResource("3_jsrua")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 50
 disabled = true
 text = "2
 "
@@ -214,9 +237,10 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = SubResource("Theme_1el2h")
+theme = ExtResource("3_jsrua")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 50
 disabled = true
 text = "2
 "
+
+[connection signal="pressed" from="CanvasLayer/ColorRect/Back-to-menu" to="." method="_on_backtomenu_pressed"]
